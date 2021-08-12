@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/automatio TV wifi.png" sizes="57x57">
+    <title>AutomatioTV</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="author" content="Yim Cheatvannak">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChelinShop is a cambodian website easy for buy product">
+    <meta name="keywords" content="iptv cambodia, web tv cambodia, khmer tv, Khmer TV online, internet tv, khmer Television">
+    <meta property="og:url" content="http://live.automatio.biz" />
+    <meta property="og:type" content="TV Live, ផ្សាយផ្ទាល់" />
+    <meta property="og:title" content="Cambodian broadcasting network for agricaltural content" />
+    <meta property="og:image" content="img/control room TV network.jpg" />
+    <meta name="twitter:title" content="Cambodian broadcasting network for agricaltural content">
+    <meta name="twitter:description" content="Cambodian broadcasting network for agricaltural content">
+    <meta name="twitter:image" content="img/automatio TV wifi.png">
+    <meta name="twitter:site" content="@AutomatioTV">
+    <meta name="twitter:creator" content="@Monirak.Yim">
+    <link rel="icon" href="img/automatio TV wifi.png" type="image/png" />
+    <link rel="shortcut icon" href="img/automatio TV wifi.png" type="image/png" />
+    <title>AutomatioTV</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="ផ្សាយផ្ទាល់.html">
+                <img src="img/automatio TV wifi.png" alt="Logo" width="70" height="70">   
+                Automatio TV
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1 active" aria-current="page" href="ផ្សាយផ្ទាល់.html">ផ្សាយផ្ទាល់</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1 " href="បច្ចេកវិទ្យា.html">បច្ចេកវិទ្យា</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1" href="បច្ចេកទេស.html">បច្ចេកទេស</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1" href="ព័ត៌មាន.html">ព័ត៌មាន</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1" href="ទំនាក់ទំនង.html">ទំនាក់ទំនង</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+        <div align ="center" style="width: 100%">
+            <video style="width: 100%" id="video" controls autoplay></video>
+              <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+            <script>
+               var video = document.getElementById("video");
+               var videoSrc = "/hls/test.m3u8";
+               if (Hls.isSupported()) {
+                  var hls = new Hls();
+                      hls.loadSource(videoSrc);
+                      hls.attachMedia(video);
+                }
+                else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+                    video.src = videoSrc;
+                }
+            </script>
+        </div>
+        <div class="container-fluid tm-container-content tm-mt-70">
+        <div class="row mb-4">
+            <!--<h2 class="col-6 tm-text-primary"> ផ្សាយផ្ទាល់ <i class="fas fa-signal-stream"></i></h2>-->
+            <h2 class="col-6 tm-text-primary"> ផ្សាយផ្ទាល់
+               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-broadcast" viewBox="0 0 16 16">
+                   <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+               </svg>
+            </h2>
+        </div>
+
+    </div> <!-- container-fluid, tm-container-content -->
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/control room TV network.jpg"></div>
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">About Automatio TV</h3>
+                    <p>គេហទំព័រនិងផេក facebook <a rel="sponsored" href="https://www.facebook.com/Automatio.Cambodia">Automatio TV</a>&nbsp;ផ្សព្វផ្សាយពីកម្មវិធីលើមាតិកាអប់រំវិស័យកសិកម្មសំរាប់ប្រជាជនកម្ពុជា</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">Our Links</h3>
+                    <ul class="tm-footer-links pl-0">
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Our Company</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
+                        <li class="mb-2"><a href="https://www.facebook.com/Automatio.Cambodia"><i class="fab fa-facebook"></i></a></li>
+                        <li class="mb-2"><a href="https://www.instagram.com/automatio.service"><i class="fab fa-instagram"></i></a></li>
+                        <li class="mb-2"><a href="https://www.tiktok.com/@automatio"><i class="fab fa-tiktok"></i></a></li>
+                        <li class="mb-2"><a href="mailto:monirak.automatio@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                        <li class="mb-2"><a href="https://t.me/monireak"><i class="fab fa-telegram"></i></a></li>
+                        <li class="mb-2"><a href="https://m.me/Automatio.Cambodia"><i class="fab fa-facebook-messenger"></i></a></li>
+                        <li class="mb-2"><a href="tel:+85515499031"><i class="fas fa-phone-volume"></i></a></li>
+                    </ul>
+                    <a href="#" class="tm-text-gray text-right d-block mb-2">Terms of Use</a>
+                    <a href="#" class="tm-text-gray text-right d-block">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
+                    Copyright © 2021 <a href="https://www.facebook.com/Automatio-TV-113068001036990" class="tm-text-gray" rel="sponsored" target="_parent">Automatio TV</a>
+                </div>
+                <div class="col-lg-4 col-md-5 col-12 px-5 text-right">
+                    Designed by <a href="https://automatio.biz" class="tm-text-gray" rel="sponsored" target="_parent">Automatio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>
