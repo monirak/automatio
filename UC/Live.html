@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>University of Cambodia</title>
+    <link rel="icon" href="img/uc.png" sizes="65x65">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
+</head>
+<body>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">
+                <center>
+                    <img src="img/uc logo.png" alt="Image" class="img-fluid" style="width:80%">      
+                </center>
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item"><a href="Home.html" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a></li>
+                    <li class="tm-nav-item"><a href="infor.html" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Information
+                    </a></li>
+                    <li class="tm-nav-item"><a href="Achievement.html" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        Achievement
+                    </a></li>
+                    <li class="tm-nav-item active"><a href="Live.html" class="tm-nav-link">
+                        <i class="material-icons">cast</i>
+                        Live
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="tm-mb-65">
+                <a rel="nofollow" href="https://www.facebook.com/universityofcambodia" class="tm-social-link">
+                    <i class="fab fa-facebook tm-social-icon"></i>
+                </a>
+                <a href="https://twitter.com/UCCambodia" class="tm-social-link">
+                    <i class="fab fa-twitter tm-social-icon"></i>
+                </a>
+                <a href="https://www.instagram.com/theuniversityofcambodia" class="tm-social-link">
+                    <i class="fab fa-instagram tm-social-icon"></i>
+                </a>
+                <a href="https://kh.linkedin.com/company/theuniversityofcambodia" class="tm-social-link">
+                    <i class="fab fa-linkedin tm-social-icon"></i>
+                </a>
+                
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+            <img src="img/UC_banner.png" alt="Image" class="img-fluid">
+            <hr class="tm-hr-primary">
+            <video id="video" width="100%" controls loop autoplay></video>
+                        <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+                        <script>
+                          var video = document.getElementById("video");
+                          var videoSrc = "https://seatv.netlinkbroadcaster.com/hls/test.m3u8";
+                          if (Hls.isSupported()) {
+                             var hls = new Hls();
+                             hls.loadSource(videoSrc);
+                             hls.attachMedia(video);
+                          }
+                           else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+                             video.src = videoSrc;
+                          }
+                        </script>
+                        <center>
+                        <h2 class="pt-2 tm-color-primary tm-post-title">តារាងកម្មវិធីផ្សាយ</h2>
+                        </center>
+                        <iframe src="https://netlinkbroadcaster.com/Morodok kunkhmer/event live uc.html" width="100%" height="1000px" scrolling="no" style="border: none;"></iframe>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
+    <script src="https: //netlinkbroadcaster.com/SEATV app web/js/Kh_date.js"></script>
+</body>
+</html>
