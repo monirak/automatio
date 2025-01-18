@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netlink LiveUnit</title>
+    <style>
+        body {
+            display: flex;              /* Use flexbox to center the content */
+            justify-content: center;    /* Center content horizontally */
+            align-items: center;        /* Center content vertically */
+            flex-direction: column;     /* Stack images vertically */
+            margin: 0;                  /* Remove default margin */
+            background-color: #f0f0f0;  /* Optional background color */
+            min-height: 100vh;          /* Allow the body to grow beyond viewport */
+            padding: 20px;              /* Optional padding for some space around */
+        }
+
+        img {
+            width: 80%;                 /* Set image width to 80% of the screen */
+            height: auto;               /* Maintain aspect ratio */
+            opacity: 0;                 /* Initially set image opacity to 0 */
+            animation: fadeIn 2s ease-in-out forwards; /* Fade-in animation */
+            margin: 20px 0;             /* Add space between the images */
+        }
+
+        /* Apply a slight delay to the second image */
+        img:nth-of-type(2) {
+            animation-delay: 1s;        /* Delay the second image fade-in */
+        }
+
+        /* Define the fade-in animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;             /* Start with 0 opacity */
+            }
+            100% {
+                opacity: 1;             /* End with full opacity */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Netlink LiveU</h1>
+
+    <!-- Your two images -->
+    <img src="Live Bonding.png" alt="First Image">
+    <img src="NetlinkLiveU_Wallpaper.gif" alt="Second Image">
+
+</body>
+</html>
